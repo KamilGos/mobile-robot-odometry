@@ -60,26 +60,23 @@ $ sudo python3 calculate_odometry.py
 ```
 ## :eyes: Implementation ##
 For caclulating pose with velocity readings, the following eqiations are used:
-<div align="center" id="put_id"> 
+<div align="center" id="eq1"> 
   <img src=images/eq_vel.png width="150" />
   &#xa0;
 </div>
 
 and for calculating pose with encoder readings:
-<div align="center" id="put_id"> 
+<div align="center" id="eq2"> 
   <img src=images/eq_enc.png width="300" />
   &#xa0;
 </div>
 , where:
+<div align="left" id="eq3"> 
+  <img src=images/eq_var.png width="300" />
+  &#xa0;
+</div>
 
-* L - distance between the wheels
-* d - diameter of the wheels
-* $v_R  = \frac{d}{2} \omega_R$
-* $v_L  = \frac{d}{2} \omega_L$ 
-* $T_{PR}$ - pulses per revolution
-* $E_{enc}$ - encoder increment
-
-For robot used in tests: L=330mm, d=195mm and $T_{PR}$=76600
+For robot used in tests: L=330mm, d=195mm and T_PR=76600
 
 ## :memo: License ##
 
@@ -92,32 +89,3 @@ Made with :heart: by <a href="https://github.com/KamilGos" target="_blank">Kamil
 &#xa0;
 
 <a href="#top">Back to top</a>
-
-
-
-<!-- ADDONS -->
-<!-- images -->
-<!-- <h2 align="left">1. Mechanics </h2>
-<div align="center" id="inventor"> 
-  <img src=images/model_1.png width="230" />
-  <img src=images/model_2.png width="236" />
-  <img src=images/model_3.png width="228" />
-  &#xa0;
-</div> -->
-
-<!-- one image -->
-<!-- <h2 align="left">2. Electronics </h1>
-<div align="center" id="electronics"> 
-  <img src=images/electronics.png width="500" />
-  &#xa0;
-</div> -->
-
-
-<!-- project dockerized -->
-<!-- <div align="center" id="status"> 
-  <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png" alt="simulator" width="75" style="transform: scaleX(-1);"/>
-   <font size="6"> Project dockerized</font> 
-  <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png" alt="simulator" width="75"/>
-  &#xa0;
-</div>
-<h1 align="center"> </h1> -->
